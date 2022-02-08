@@ -3,7 +3,7 @@ from datetime import datetime
 
 # In this example I refer to the exercise from the first section of the post (OOP basics 1)
 class Assistant:
-    _latest_version = 12
+    _latest_os_version = 12
 
     def __init__(self, name, version=9):
         self.name = name
@@ -21,8 +21,8 @@ class Assistant:
 
     # Upgrade the system if the newest version is available
     def upgrade(self):
-        if self.version < self._latest_version:
-            self.version = self._latest_version
+        if self.version < self._latest_os_version:
+            self.version = self._latest_os_version
         else:
             return "Your system already has the latest version."
 
